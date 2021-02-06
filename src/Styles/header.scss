@@ -1,0 +1,127 @@
+.nav-container {
+
+    a {
+
+        color: white;
+    }
+
+    header {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 3em;
+        height: 5rem;
+        background: #6700EE;
+
+        @media screen and ( max-width: 600px ) {
+
+            padding: 0 1rem;
+        }
+
+        .logo {
+
+            color: #00F7FF;
+        }
+
+        nav {
+
+            ul {
+
+                display: flex;
+
+                a {
+
+                    display: block;
+                    padding: 0 1em;
+                }
+            }
+        }
+    }
+
+    .social-header, .hero-design {
+
+        display: none;
+    }
+
+    .hero {
+
+        background: #6E00FF;
+        color: white;
+        display: grid;
+        padding: 3em;
+        height: 70vh;
+        position: relative;
+
+        .content {
+
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            width: fit-content;
+
+            h1 {
+                
+                width: fit-content;
+                max-width: 400px;
+                text-align: start;
+                font-size: 3rem;
+                letter-spacing: 1px;
+            }
+
+            p {
+
+                color: #FF64CB;
+                margin-top: 1.5em;
+                letter-spacing: 1px;
+            }
+        }
+
+        svg {
+    
+            width: 30px;
+            margin-top: 1em;
+        }
+    }
+
+    @media screen and ( min-width: 1000px ) {
+
+        background: unset;
+
+        header, .hero {
+
+            width: 66.6%;
+        }
+
+        .social-header {
+
+            position: absolute;
+            top: 0;
+            right: 3em;
+            width: 32.3%;
+            max-width: 200px;
+            height: 5rem;
+            display: flex;
+
+            ul {
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .hero-design {
+
+            display: unset;
+            position: absolute;
+            right: 0;
+            width: 50vh !important;
+            height: 50vh !important;
+            transform: translate( 50%, 10vh );
+        }
+    }
+}

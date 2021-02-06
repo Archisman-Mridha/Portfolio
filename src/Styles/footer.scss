@@ -1,0 +1,22 @@
+footer {
+
+    background: #6700EE;
+    position: relative;
+    height: 48vh;
+    color: white;
+    padding: 1rem;
+
+    span {
+
+        padding: 0 1rem;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    svg {
+
+        position: absolute;
+        top: 0rem;
+        right: -3rem;
+    }
+}

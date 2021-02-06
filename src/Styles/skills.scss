@@ -1,0 +1,65 @@
+.skills {
+
+    background: #FF64CB;
+
+    ul {
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        li {
+
+            background: white;
+            padding: 1em;
+            border-radius: 5px;
+            margin-bottom: 1em;
+            text-align: center;
+            max-width: 400px;
+            width: fit-content;
+
+            svg {
+    
+                margin-bottom: 3rem;
+            }
+    
+            .skill-title {
+    
+                margin-bottom: 1rem;
+                font-family: 'Segoe Print';
+                font-style: italic;
+            }
+    
+            .featured-description {
+    
+                margin-bottom: 0.5em;
+                text-align: start;
+            }
+        }
+    }
+
+    @media screen and ( min-width: 1000px ) {
+
+        padding: 3em 8px !important;
+
+        ul {
+
+            flex-direction: row;
+            justify-content: space-evenly;
+            transform: translateY( 4em );
+            
+            li {
+
+                margin-bottom: 0;
+                margin: 0 8px;
+                padding-bottom: 3rem;
+
+                .featured-description {
+
+                    max-width: 550px !important;
+                }
+            }
+        }
+    }
+}
